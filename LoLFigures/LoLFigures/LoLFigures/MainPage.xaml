@@ -16,6 +16,7 @@
            HorizontalOptions="Center">
 
             <Image x:Name="SummonerIcon" 
+             Source="{Binding SummonerIcon}"
              Aspect="AspectFill"
              Margin="-20"
              HeightRequest="100"
