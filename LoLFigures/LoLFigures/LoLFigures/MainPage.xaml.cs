@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using RiotSimplify.Services;
+using LoLFigures.ViewModels;
 
 namespace LoLFigures
 {
@@ -16,23 +17,19 @@ namespace LoLFigures
 		public MainPage(RiotApiClient apiClient)
 		{
 			InitializeComponent();
-            UserService = apiClient;
-		}
+            BindingContext = new MainPageViewModel(apiClient);
+        }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+            await MyViewModel.Init();
+        }
 
-            try
-            {
-                var summonerIconPath = await UserService.GetSummonerIcon();
-
-                SummonerIcon.Source = ImageSource.FromUri(new Uri(summonerIconPath));
-
-            } catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }           
+        public MainPageViewModel MyViewModel
+        {
+            get { return BindingContext as MainPageViewModel; }
+            set { BindingContext = value; }
         }
     }
 }

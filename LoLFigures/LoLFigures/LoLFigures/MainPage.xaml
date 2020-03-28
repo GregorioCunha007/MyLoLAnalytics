@@ -4,18 +4,27 @@
              xmlns:local="clr-namespace:LoLFigures"
              x:Class="LoLFigures.MainPage">
 
-    <Frame Margin="10"
-       CornerRadius="50"
-       HeightRequest="60"
-       WidthRequest="60"
-       IsClippedToBounds="True"
-       HorizontalOptions="Center"
-       VerticalOptions="Center">
-        <Image x:Name="SummonerIcon" 
-         Aspect="AspectFill"
-         Margin="-20"
-         HeightRequest="100"
-         WidthRequest="100" />
-    </Frame>
+    <StackLayout BackgroundColor="#030608">
+
+        <Label FontFamily="{StaticResource Ubuntu}" Text="GREGGZ" FontSize="Medium" HorizontalOptions="Center" TextColor="#A08700"/>
+
+        <Frame Margin="10"
+           CornerRadius="50"
+           HeightRequest="60"
+           WidthRequest="60"
+           IsClippedToBounds="True"
+           HorizontalOptions="Center">
+
+            <Image x:Name="SummonerIcon" 
+             Aspect="AspectFill"
+             Margin="-20"
+             HeightRequest="100"
+             WidthRequest="100" />
+            
+        </Frame>
+
+        <Label FontFamily="{StaticResource Ubuntu}" Text="53.5% Win/Loss" FontSize="Large" HorizontalOptions="Center" TextColor="#A08700"/>
+
+    </StackLayout>
 
 </ContentPage>

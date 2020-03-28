@@ -4,7 +4,11 @@
              x:Class="LoLFigures.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <OnPlatform x:Key="Ubuntu" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Ubuntu-MediumItalic.ttf#MediumItalic"/>
+           </OnPlatform>
+        </ResourceDictionary>
 
-	</Application.Resources>
+    </Application.Resources>
 </Application>

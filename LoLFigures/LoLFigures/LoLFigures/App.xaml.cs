@@ -13,8 +13,8 @@ namespace LoLFigures
 		public App ()
 		{
 			InitializeComponent();
-            var riot = new RiotApiClient("RGAPI-9df4f174-1ccc-4da6-ae88-0e167478c90b", "greggz");
-			MainPage = new LoLFigures.MainPage(riot);
+            var riot = new RiotApiClient("RGAPI-11163353-51b4-417e-b613-d132b019af99", "greggz");
+            MainPage = new LoLFigures.MainPage(riot);
 		}
 
 		protected override void OnStart ()
