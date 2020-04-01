@@ -13,7 +13,7 @@ namespace LoLFigures
 		public App ()
 		{
 			InitializeComponent();
-            var riot = new RiotApiClient("RGAPI-11163353-51b4-417e-b613-d132b019af99", "greggz");
+            var riot = new RiotApiClient("RGAPI-ef0c7326-1658-4b76-a3e1-12d29f238cc8", "greggz");
             MainPage = new LoLFigures.MainPage(riot);
 		}
 

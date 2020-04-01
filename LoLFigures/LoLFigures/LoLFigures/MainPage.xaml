@@ -26,6 +26,72 @@
 
         <Label FontFamily="{StaticResource Ubuntu}" Text="53.5% Win/Loss" FontSize="Large" HorizontalOptions="Center" TextColor="#A08700"/>
 
+        <Grid VerticalOptions="FillAndExpand" x:Name="Barchart">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="EndAndExpand">
+                <Label x:Name="Top_Bar_Counter" FontSize="Small" TextColor="White" HorizontalOptions="Center"></Label>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" />
+                     </Grid.ColumnDefinitions>
+                     <BoxView x:Name="Top_Bar" BackgroundColor="#A31919" HeightRequest="1" Grid.Row="0" Grid.Column="0" Opacity="0.7"></BoxView>
+                </Grid>
+                <Label FontFamily="{StaticResource Ubuntu}" Text="TOP" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="EndAndExpand">
+                <Label x:Name="Jungle_Bar_Counter" FontSize="Small" TextColor="White" HorizontalOptions="CenterAndExpand"></Label>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView x:Name="Jungle_Bar" BackgroundColor="#A31919" HeightRequest="1" Grid.Row="0" Grid.Column="0" Opacity="0.7"></BoxView>
+                </Grid>
+                <Label FontFamily="{StaticResource Ubuntu}" Text="JGL" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="2"  VerticalOptions="EndAndExpand">
+                <Label x:Name="Mid_Bar_Counter" FontSize="Small" TextColor="White" HorizontalOptions="Center"></Label>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView x:Name="Mid_Bar" BackgroundColor="#A31919" HeightRequest="1" Grid.Row="0" Grid.Column="0" Opacity="0.7"></BoxView>
+                </Grid>
+                <Label FontFamily="{StaticResource Ubuntu}" Text="MID" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="3"  VerticalOptions="EndAndExpand">
+                <Label x:Name="Adc_Bar_Counter" FontSize="Small" TextColor="White" HorizontalOptions="Center"></Label>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView x:Name="Adc_Bar" BackgroundColor="#A31919" HeightRequest="1" Grid.Row="0" Grid.Column="0" Opacity="0.7"></BoxView>
+                </Grid>
+                <Label FontFamily="{StaticResource Ubuntu}" Text="ADC" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="4"  VerticalOptions="EndAndExpand">
+                <Label x:Name="Support_Bar_Counter" FontSize="Small" TextColor="White" HorizontalOptions="Center"> </Label>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView x:Name="Support_Bar" BackgroundColor="#A31919" HeightRequest="1"  Grid.Row="0" Grid.Column="0" Opacity="0.7"></BoxView>
+                </Grid>
+                <Label FontFamily="{StaticResource Ubuntu}" Text="SUP" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White"/>
+            </StackLayout>
+
+        </Grid>
+        
     </StackLayout>
 
 </ContentPage>
